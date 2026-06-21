@@ -1,4 +1,4 @@
-const todoArray = JSON.parse(localStorage.getItem('task')) || [];
+    const todoArray = JSON.parse(localStorage.getItem('task')) || [];
 let editIndex;
 
 function loadTodo() {
@@ -39,7 +39,7 @@ function makeChanges() {
         alert('Input cannot be empty')
     } else {
         todoArray.splice(editIndex, 1, newUserInput)
-        addToLocalStorage()
+        addToLocalStorage() 
         displayTodo()
     }
 }
